@@ -1,20 +1,11 @@
 {
   "name": "todo-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest --passWithNoTests"
+    "start": "node server.js",
+    "test": "jest --ci --reporters=default --reporters=jest-junit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1"
-  },
-  "devDependencies": {
-    "jest": "^30.4.2"
+  "jest": {
+    "testEnvironment": "node"
   }
 }
