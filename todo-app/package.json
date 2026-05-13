@@ -2,8 +2,12 @@
   "name": "todo-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^16.0.0"
   },
   "jest": {
     "testEnvironment": "node"
