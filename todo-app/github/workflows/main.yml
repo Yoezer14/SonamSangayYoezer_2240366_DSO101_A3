@@ -18,15 +18,13 @@ jobs:
       with:
         node-version: 18
 
-    - name: Install dependencies
-      run: |
-        cd todo-app
-        npm install
+    - - name: Install dependencies
+        working-directory: ./todo-app
+        run: npm install
 
-    - name: Run tests
-      run: |
-        cd todo-app
-        npm test
+        --name: Run tests
+        working-directory: ./todo-app
+        run: npm test
 
     - name: Login to DockerHub
       uses: docker/login-action@v2
